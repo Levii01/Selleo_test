@@ -3,12 +3,12 @@ Right now we have <%= pluralize(@users.count, "user") %>
 <table class="table table-condensed">
   <thead>
     <tr>
-      <th>ID</th>
+      <th>Nr</th>
       <th>Email</th>
     </tr>
   </thead>
   <tbody>
-    <%= render @users %>
+    <%= render 'user' %>
   </tbody>
 </table>
 
