@@ -9,6 +9,15 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container-fluid">
+      <% flash.each do | name, msg |%>
+      <%= content_tag(:div, msg, class:"alert alert-info") %>
+      <% end %>
+
+      <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+        <%= yield %>
+      </div>
+    </div>
+
   </body>
 </html>
