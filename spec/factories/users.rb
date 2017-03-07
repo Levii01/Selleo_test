@@ -4,5 +4,6 @@ FactoryGirl.define do
     "user#{n}@gmail.com"
     end
     password "secret"
+    admin false
   end
 end
