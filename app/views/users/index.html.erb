@@ -8,7 +8,9 @@ Right now we have <%= pluralize(@users.count, "user") %>
     </tr>
   </thead>
   <tbody>
-    <%= render 'user' %>
+    <% @users.each_with_index do |user, id|%>
+      <%= render partial: 'users', locals: { user: user, id: id } %>
+    <% end %>
   </tbody>
 </table>
 
