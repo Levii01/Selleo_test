@@ -5,7 +5,7 @@ RSpec.describe ApplicationHelper, type: :helper do
     let(:success) { 'notice'}
     let(:danger) { 'danger'}
 
-    it 'return success alert' do
+    it 'returns success alert' do
       expect(helper.select_class_alert(success)).to eq('success')
     end
 

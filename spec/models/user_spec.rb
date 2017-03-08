@@ -4,7 +4,7 @@ RSpec.describe User, type: :model do
   require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
   describe 'create new user' do
-    context 'when create new user' do
+    context 'when createing new user' do
       subject { build :user, email: 'model@test.com' }
 
       it { is_expected.to be_valid }
