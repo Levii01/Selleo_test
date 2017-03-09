@@ -22,9 +22,5 @@ RSpec.describe User, type: :model do
 
       it { is_expected.to_not be_valid }
     end
-
-    describe 'database columns' do
-      it { should have_db_column :admin }
-    end
   end
 end
