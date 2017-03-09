@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :interest do
-    user nil
-    interest "MyString"
+    user { FactoryGirl.create(:user) }
+    name { 'Wideo Game' }
   end
 end
