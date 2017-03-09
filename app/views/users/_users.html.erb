@@ -1,4 +1,14 @@
-  <tr>
-    <td><%= id + 1 %></td>
-    <td><%= user.email %></td>
-  </tr>
+<tr>
+  <td><%= id + 1 %></td>
+  <td><%= user.email %></td>
+  <td><%= user.age ? user.age : 'Not defined' %></td>
+  <td><%= user.gender %></td>
+  <td><%= user.interests.map {|interest| interest.name}.join(', ')%></td>
+  <td>
+    <% if can? :destroy, User %>
+      <%= link_to user, method: :delete, title: 'delete', class: 'btn btn-default' do %>
+        <%= fa_icon 'trash' %>
+      <% end %>
+    <% end %>
+  </td>
+</tr>
