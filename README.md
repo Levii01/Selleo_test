@@ -1,4 +1,4 @@
-# recruitment-web-app
+# recruitment-web-app [![Build Status](https://travis-ci.org/Levii01/Selleo_test.svg?branch=master)](https://travis-ci.org/Levii01/Selleo_test)
 This is a spec for a candidate evaluation app.
 
 
