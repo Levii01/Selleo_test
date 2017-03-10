@@ -5,6 +5,12 @@ Right now we have <%= pluralize(@users.count, "user") %>
     <tr>
       <th>Nr</th>
       <th>Email</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Interests</th>
+      <% if can? :destroy, User %>
+        <th>Action</th>
+      <% end %>
     </tr>
   </thead>
   <tbody>
